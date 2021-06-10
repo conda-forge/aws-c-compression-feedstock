@@ -1,5 +1,5 @@
 {% set name = "aws-c-compression" %}
-{% set version = "0.2.11" %}
+{% set version = "0.2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 29de5f7bd6afc368019bc91c712b630c7db2257f8576b5e3ece4b4a4590ecffc
+  sha256: 52963f7614055acf387e60caf2a40f0ab081ffa09e77c582756fc4a4aa64f85b
 
 build:
   number: 0
