@@ -1,11 +1,11 @@
-About aws-c-compression
-=======================
+About aws-c-compression-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-compression-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awslabs/aws-c-compression
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-compression-feedstock/blob/main/LICENSE.txt)
 
 Summary: C99 implementation of huffman encoding/decoding
 
