@@ -10,7 +10,7 @@ source:
   sha256: 51796f98a29a0d6e257c02e1f842bbc41db324758939093e6d46ec28337a3272
 
 build:
-  number: 3
+  number: 4
   run_exports:
     - {{ pin_subpackage("aws-c-compression", max_pin="x.x.x") }}
 
