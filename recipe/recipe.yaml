@@ -13,7 +13,7 @@ source:
   sha256: d89fca17a37de762dc34f332d2da402343078da8dbd2224c46a11a88adddf754
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -29,14 +29,13 @@ requirements:
 tests:
   - script:
       - if: unix
-        then: test -f $PREFIX/lib/libaws-c-compression${SHLIB_EXT}
-      - if: unix
-        then: test -f $PREFIX/include/aws/compression/compression.h
+        then:
+          - test -f $PREFIX/lib/libaws-c-compression${SHLIB_EXT}
+          - test -f $PREFIX/include/aws/compression/compression.h
       - if: win
-        then: if not exist %LIBRARY_INC%\\aws\\compression\\compression.h exit 1
-      - if: win
-        then: if not exist %PREFIX%\\Library\\bin\\aws-c-compression.dll exit 1
-
+        then:
+          - if not exist %LIBRARY_INC%\\aws\\compression\\compression.h exit 1
+          - if not exist %PREFIX%\\Library\\bin\\aws-c-compression.dll exit 1
 about:
   license: Apache-2.0
   license_file: LICENSE
