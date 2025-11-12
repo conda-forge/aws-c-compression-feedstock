@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: C99 implementation of huffman encoding/decoding
 
+Development: https://github.com/awslabs/aws-c-compression
+
 Current build status
 ====================
 
