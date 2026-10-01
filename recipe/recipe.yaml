@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aws-c-compression
-  version: "0.3.3"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/awslabs/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 33a91db709a547f417b1b23fdb76a64727ee8fb7ed88dd1a43be117f402db356
+  sha256: d8e934da2086bfec41f97a0cff749d926f66ccb90f2052f1d70841916c1bf4d7
 
 build:
   number: 1
@@ -24,7 +24,7 @@ requirements:
   host:
     - aws-c-common
   run_exports:
-    - ${{ pin_subpackage("aws-c-compression", upper_bound="x.x.x") }}
+    - ${{ pin_subpackage("aws-c-compression", upper_bound="x.x") }}
 
 tests:
   - script:
